@@ -8,30 +8,35 @@
   </head>
   <body>
     <div class="container">
-      <div>
-        <h1>Tic Tac Toe</h1>
-        <button class="restart">Restart</button>
+      <div class="header">
+        <h1 class="title">Tic Tac Toe</h1>
       </div>
+      <div class="game-result hidden"></div>
       <div class="players">
         <div class="firstplayer">
           <span class="player-1">player 1</span>
-          <i class="img1"></i>
+          <span class="icon1">(X)</span>
+          <!-- <i class="img1"></i> -->
         </div>
         <div class="secondplayer">
           <span class="player-2">player 2</span>
-          <i class="img2"></i>
+          <span class="icon2">(O)</span>
+          <!-- <i class="img2"></i> -->
         </div>
       </div>
-      <div class="gameboard">
-        <div class="box" id="0"></div>
-        <div class="box" id="1"></div>
-        <div class="box" id="2"></div>
-        <div class="box" id="3"></div>
-        <div class="box" id="4"></div>
-        <div class="box" id="5"></div>
-        <div class="box" id="6"></div>
-        <div class="box" id="7"></div>
-        <div class="box" id="8"></div>
+      <div>
+        <div class="gameboard">
+          <div class="box" id="b0"></div>
+          <div class="box" id="b1"></div>
+          <div class="box" id="b2"></div>
+          <div class="box" id="b3"></div>
+          <div class="box" id="b4"></div>
+          <div class="box" id="b5"></div>
+          <div class="box" id="b6"></div>
+          <div class="box" id="b7"></div>
+          <div class="box" id="b8"></div>
+        </div>
+        <button class="restart">Restart Game</button>
       </div>
     </div>
   </body>
