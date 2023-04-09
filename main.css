@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/* .first-color { 
+	background: #cefff1; 
+}
+	
+.second-color { `
+	background: #ace7ef; 
+}
+
+.third-color { 
+  background: #a6acec; 
+}
+
+.fourth-color { 
+	background: #a56cc1;  */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #cefff1;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* margin-bottom: 10px; */
+}
+.title {
+  color: #a56cc1;
+  font-size: 40px;
+  margin-top: 20px;
+}
+.restart {
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #a56cc1;
+  font-size: 30px;
+  background-color: #a6acec;
+  color: #a56cc1;
+  cursor: pointer;
+}
+.restart:hover {
+  background-color: #a6acecab;
+}
+.gameboard {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  border: 2px solid #a56cc1;
+  cursor: pointer;
+}
+.textX,
+.textO {
+  color: #a56cc1;
+  font-size: 80px;
+}
+.players {
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  gap: 20px;
+}
+.player-1,
+.player-2 {
+  font-size: 25px;
+  color: #a6acec;
+}
+.firstplayer,
+.secondplayer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon1,
+.icon2 {
+  background-size: cover;
+  display: block;
+  font-size: 25px;
+  color: #a56cc1;
+}
+
+.activePlayer {
+  background-color: #ace7ef;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #a56cc1;
+  text-align: center;
+}
+.game-result {
+  font-size: 35px;
+  color: #a6acec;
+}
+.hidden {
+  display: none;
+}
+/* .winnerStyle {
+  background-color: #ace7ef;
+} */
+/* //////////////////////////// */
+/* Board design */
+/* //////////////////////////// */
+#b0 {
+  border-top: none;
+  border-left: none;
+}
+#b1 {
+  border-top: none;
+}
+#b2 {
+  border-top: none;
+  border-right: none;
+}
+
+#b3 {
+  border-left: none;
+}
+
+#b5 {
+  border-right: none;
+}
+
+#b6 {
+  border-left: none;
+  border-bottom: none;
+}
+#b7 {
+  border-bottom: none;
+}
+#b8 {
+  border-right: none;
+  border-bottom: none;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
