@@ -63,6 +63,22 @@ let winPos = [
 
 function winner(e) {
   for (let i = 0; i < winPos.length; i++) {
+    if (
+      b1.textContent !== "" &&
+      b2.textContent !== "" &&
+      b3.textContent !== "" &&
+      b4.textContent !== "" &&
+      b5.textContent !== "" &&
+      b6.textContent !== "" &&
+      b7.textContent !== "" &&
+      b8.textContent !== "" &&
+      b9.textContent !== ""
+    ) {
+      players.classList.add("hidden");
+      gameResult.classList.remove("hidden");
+      gameResult.innerHTML = "Draw..!";
+      break;
+    }
     let option = winPos[i];
     let [a, b, c] = option;
 
@@ -79,22 +95,6 @@ function winner(e) {
       b.style.backgroundColor = "#ace7ef";
       c.style.backgroundColor = "#ace7ef";
 
-      break;
-    }
-    if (
-      b1.textContent !== "" &&
-      b2.textContent !== "" &&
-      b3.textContent !== "" &&
-      b4.textContent !== "" &&
-      b5.textContent !== "" &&
-      b6.textContent !== "" &&
-      b7.textContent !== "" &&
-      b8.textContent !== "" &&
-      b9.textContent !== ""
-    ) {
-      players.classList.add("hidden");
-      gameResult.classList.remove("hidden");
-      gameResult.innerHTML = "Draw..!";
       break;
     }
   }

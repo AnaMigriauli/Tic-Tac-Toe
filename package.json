@@ -1,7 +1,10 @@
 {
+  "homepage": "https://AnaMigriauli.github.io/Tic-Tac-Toe",
   "repository": "#",
   "license": "UNLICENSED",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack serve --config ./bundler/webpack.dev.js"
   },
@@ -25,5 +28,8 @@
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
